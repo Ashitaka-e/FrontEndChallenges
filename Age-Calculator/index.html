@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+
+  <!--=============== Link  css ===============-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <script src="./scripts.js" defer></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-container">
+      <div class="day">
+        <label for="birth-date" id="label-date">Day</label>
+        <input type="text" id="birth-date" class="form__field" placeholder="DD" maxlength="2">
+        <p id="error-date" class="error-message"></p>
+      </div>
+      <div class="month">
+        <label for="birth-month" id="label-month">Month</label>
+        <input id="birth-month" class="form__field" placeholder="MM" maxlength="2">
+        <p id="error-month" class="error-message"></p>
+      </div>
+      <div class="year">
+        <label for="birth-year" id="label-year">Year</label>
+        <input id="birth-year" class="form__field" placeholder="YYYY" maxlength="4">
+        <p id="error-year" class="error-message"></p>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="line"></div>
+      <button onclick="validateInputs()" class="btn">
+        <img src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+
+    <div class="result-container">
+      <div class="years">
+        <span id="resultatAnne">- -</span>
+        years
+      </div>
+      <div class="months">
+        <span id="resultatMois">- -</span>
+        months
+      </div>
+      <div class="days">
+        <span id="resultatJours">- -</span>
+        days
+      </div>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Erwan Jadot</a>.
+  </div>
+
+</body>
+
+</html>
