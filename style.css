@@ -1,0 +1,135 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+
+
+    /*========== Font and typography ==========*/
+
+
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5EDE9;
+    font-family: 'Courier Prime', monospace;
+}
+
+.title {
+    margin: 4rem;
+    text-align: center;
+}
+
+.title-wrapper {
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 6rem);
+}
+
+
+
+.projects-container .card-wrapper {
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(219, 229, 230);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.projects-container .card-wrapper .image-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.projects-container .card-wrapper .image-wrapper img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects-container .card-wrapper .image-wrapper:hover img {
+    transform: scale(1.1);
+    /* Ajustez la valeur pour déterminer le niveau de zoom */
+}
+
+
+.categorie-wrapper .categorie {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.categorie-wrapper .categorie .html {
+    color: #F47A4D;
+}
+
+.categorie-wrapper .categorie .css {
+    color: #3CACDD;
+}
+
+.categorie-wrapper .categorie .js {
+    color: #FFD943;
+}
+
+.projects-container .card-wrapper {
+    margin: calc(0.625rem);
+    width: calc(100% - 1.251rem);
+}
+
+
+@media (min-width: 500px) {
+    .projects-container .card-wrapper {
+        width: calc(50% - 1.251rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .projects-container .card-wrapper {
+        margin: calc(0.9375rem);
+        width: calc(50% - 1.876rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-container .card-wrapper {
+        margin: calc(1.25rem);
+        width: calc(33.3333% - 2.501rem);
+    }
+}
+
+
+
+
+
+
+
+/* {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    display: flex;
+    margin: calc(0.625rem);
+    width: calc(100% - 1.251rem);
+} */
