@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: inherit;
+    font-family: 'Puritan', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(89.46deg, #944040 0.45%, rgba(125, 53, 53, 0.4) 101.08%);
+
+}
+
+/* Your code goes here */
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/*========== Gauche ==========*/
+.gauche {
+    width: 40%;
+
+}
+
+.logo {
+    margin: 30px;
+}
+
+.titre {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.menu {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu div {
+    width: 353px;
+    height: 70px;
+    border-radius: 0px 20px 20px 0px;
+    background: #FFFFFF80;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu div.active {
+    width: 403.86px;
+    height: 80px;
+    border-radius: 0px, 20px, 20px, 0px;
+    background: #FEC44C;
+    font-size: 48px;
+    line-height: 54px;
+}
+
+/*========== Droite ==========*/
+
+.droite {
+    position: relative;
+    width: 65%;
+    height: 100%;
+}
+
+.superpose1,
+.superpose2,
+.superpose3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.superpose1 {
+    left: -6%;
+    background: linear-gradient(270deg, #FEC44C -2.88%, rgba(254, 196, 76, 0.4) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.superpose2 {
+    left: -3%;
+    background: linear-gradient(270deg, #FEC44C -2.88%, rgba(254, 196, 76, 0.4) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.superpose3 {
+    background: linear-gradient(268.87deg, #FEC44C 0.85%, rgb(254, 195, 76) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 0px 0px 30px;
+
+}
+
+.superpose3 .container {
+    display: none;
+}
+
+.superpose3 .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    flex: 1;
+}
+
+.droite .container h2,
+.droite .container a {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+}
+
+.droite .container a {
+    background: #FFFFFF;
+    padding: 9px 62px;
+    border-radius: 30px;
+}
+
+.droite .container .img {
+    width: 500px;
+    height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.droite .container .img img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:1225px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /*========== Gauche ==========*/
+    .gauche {
+        width: auto;
+    }
+
+    .titre {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    .menu {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+
+    .menu div {
+        width: 150px;
+        height: 30px;
+        margin-top: 3%;
+    }
+
+    .menu div.active {
+        width: 201.93px;
+        height: 40px;
+        background: #FEC44C;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+
+    }
+
+    /*========== Droite ==========*/
+
+    .droite {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .superpose1,
+    .superpose2,
+    .superpose3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 90%;
+    }
+
+    .superpose1 {
+        right: 6%;
+    }
+
+    .superpose2 {
+        right: 3%;
+    }
+
+    .droite .container .img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .droite .container h2 {
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .droite .container a {
+        padding: 10px 67px 10px 67px;
+        border-radius: 30px;
+
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
