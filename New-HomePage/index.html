@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!--=============== Link pour le css ===============-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!--=============== Titre ===============-->
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="./index.html"><img src="./assets/images/logo.svg" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i onclick="hideMenu()"><img src="./assets/images/icon-menu-close.svg" alt=""></i>
+        <ul>
+          <li><a href="#index">Home</a></li>
+          <li><a href="#new">New</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#categories">Categories</a></li>
+        </ul>
+      </div>
+      <i onclick="showMenu()"><img src="./assets/images/icon-menu.svg" alt=""></i>
+    </nav>
+    <aside aria-labelledby="new"></aside>
+  </header>
+
+  <main class="main">
+
+
+    <picture class="picture">
+      <source media="(max-width: 799px)" srcset="./assets/images/image-web-3-mobile.jpg" />
+      <source media="(min-width: 800px)" srcset="./assets/images/image-web-3-desktop.jpg" />
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3 image" />
+    </picture>
+
+    <div class="web3-title">
+      <h1>The Bright Future of Web 3.0?</h1>
+    </div>
+
+    <div class="web3-content stack-lg">
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+        hands of the
+        people.
+        But is it really fulfilling its promise?
+      </p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+
+    <div class="new stack-lg">
+      <h2 id="new">New</h2>
+
+      <ul role="list" class="stack-xl">
+        <li class=" new-article stack-xs">
+          <h3><a href="#" class="hover-link ">Hydrogen VS Electric Cars</a></h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </li>
+        <li class=" new-article stack-xs">
+          <h3><a href="#" class="hover-link ">The Downsides of AI Artistry</a></h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </li>
+        <li class="new-article c">
+          <h3><a href="#" class="hover-link ">Is VC Funding Drying Up?</a></h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="card card-retro">
+      <img src="./assets/images/image-retro-pcs.jpg" alt="">
+      <div class="stack-sm">
+        <span>01</span>
+        <a href="">
+          <h3>Reviving Retro PCs</h3>
+        </a>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+
+    <div class="card card-laptops">
+      <img src="./assets/images/image-top-laptops.jpg" alt="">
+      <div class="stack-sm">
+        <span>02</span>
+        <a href="">
+          <h3>Top 10 Laptops of 2022</h3>
+        </a>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+
+    <div class="card card-gaming">
+      <img src="./assets/images/image-gaming-growth.jpg" alt="">
+      <div class="stack-sm">
+        <span>03</span>
+        <a href="">
+          <h3>The Growth of Gaming</h3>
+        </a>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Erwan Jadot</a>.
+  </div>
+
+
+  <!-- JavaScrip responsive ToogleMenu-->
+  <script>
+
+    const navLinks = document.getElementById("navLinks");
+    const body = document.body;
+    function showMenu() {
+      navLinks.style.right = "0";
+      navLinks.style.background = "var(--Off-white)"; // Fond sombre avec une opacité de 0.5
+      body.style.overflow = "hidden"; // Empêche le défilement de la page lorsque le menu est ouvert
+      body.style.background = "rgba(0, 0, 0, 0.5)"; // Fond sombre avec une opacité de 0.5
+    }
+    function hideMenu() {
+      navLinks.style.right = "-60%"
+      navLinks.style.background = "transparent";
+      body.style.overflow = "visible"; // Réactive le défilement lorsque le menu est fermé
+      body.style.background = "transparent"; // Fond transparent lorsque le menu est caché
+    }
+  </script>
+</body>
+
+</html>
