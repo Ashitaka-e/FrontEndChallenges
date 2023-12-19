@@ -37,7 +37,6 @@
 
 body {
     background: var(--body-color) center/cover no-repeat;
-    height: 100vh;
     color: var(--white-color);
 }
 
