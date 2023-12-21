@@ -61,6 +61,8 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--Off-white);
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 img,
@@ -70,6 +72,7 @@ canvas,
 svg {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 input,
@@ -113,7 +116,7 @@ h2 {
 }
 
 h3 {
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
     font-weight: 700;
 }
 
@@ -288,8 +291,7 @@ header nav .nav-links ul li a:hover {
 .main {
     overflow: hidden;
     padding: var(--space-xs);
-    min-height: 100vh;
-
+    /* min-height: 100vh; */
     display: grid;
     gap: var(--space-md);
 }
@@ -335,7 +337,7 @@ header nav .nav-links ul li a:hover {
 }
 
 .card img {
-    height: 255px;
+    width: 100px;
 }
 
 .card span {
@@ -361,7 +363,7 @@ header nav .nav-links ul li a:hover {
     /* main */
     .main {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1.2fr 0.5fr 1fr;
+        /* grid-template-rows: 1.2fr 0.5fr 1fr; */
         padding: var(--space-xl);
     }
 
