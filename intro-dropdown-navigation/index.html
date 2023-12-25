@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!--=============== FAVICON ===============-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--=============== Link pour le css ===============-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!--=============== Link pour le JS ===============-->
+  <script src="./script.js" defer></script>
+
+  <!--=============== Titre ===============-->
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="./index.html"><img src="./images/logo.svg" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i onclick="hideMenu()"><img src="./images/icon-close-menu.svg" alt=""></i>
+        <ul>
+          <li>
+            <a href="#" class="dropdown-toggle">Features</a>
+            <i class="arrow-icon"><img src="./images/icon-arrow-down.svg" alt="Arrow"></i>
+            <ul class="dropdown">
+              <li><a href="#">
+                  <i><img src="./images/icon-todo.svg"></i>
+                  Todo List</a>
+              </li>
+              <li>
+                <i><img src="./images/icon-calendar.svg"></i>
+                <a href="#">Calendar</a>
+              </li>
+              <li>
+                <i><img src="./images/icon-reminders.svg"></i>
+                <a href="#">Reminders</a>
+              </li>
+              <li>
+                <i><img src="./images/icon-planning.svg"></i>
+                <a href="#">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle">Company</a>
+            <i class="arrow-icon"><img src="./images/icon-arrow-down.svg" alt="Arrow"></i>
+            <ul class="dropdown">
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Our Team</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="btn-conexion">
+          <li><a href="#">Login</a></li>
+          <li><a href="https://www.google.fr/?gfe_rd=cr&ei=jEXZU4OWOsTI8geTmoHQAQ&gws_rd=ssl">Register</a></li>
+        </ul>
+      </div>
+      <i onclick="showMenu()"><img src="./images/icon-menu.svg" alt=""></i>
+    </nav>
+  </header>
+
+
+  <main class="main">
+
+    <div class="container">
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a class="btn" href="">Learn more</a>
+      <div class="client">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+
+    <picture class="picture">
+      <source media="(max-width: 749px)" srcset="./images/image-hero-mobile.png" />
+      <source media="(min-width: 750px)" srcset="./images/image-hero-desktop.png" />
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3 image" />
+    </picture>
+  </main>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>
