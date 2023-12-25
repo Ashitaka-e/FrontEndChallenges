@@ -313,6 +313,7 @@ header nav .nav-links .btn-conexion {
     display: flex;
     flex-direction: column-reverse;
     margin: var(--space-md);
+
 }
 
 .main .container {
@@ -404,6 +405,15 @@ header nav .nav-links .btn-conexion {
 
 @media (min-width:1200px) {
     .main {
+        max-width: 1440px;
+        margin-inline: auto;
         margin: var(--space-md) var(--space-3xl);
+    }
+}
+
+@media (min-width:1440px) {
+    .main {
+        max-width: 1440px;
+        margin-inline: auto;
     }
 }
