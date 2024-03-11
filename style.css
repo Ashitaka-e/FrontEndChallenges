@@ -94,6 +94,10 @@ body {
     color: #FFD943;
 }
 
+.categorie-wrapper .categorie .sass {
+    color: #CF649A;
+}
+
 .projects-container .card-wrapper {
     margin: calc(0.625rem);
     width: calc(100% - 1.251rem);
