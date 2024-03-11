@@ -1,0 +1,86 @@
+.service {
+  position: relative;
+  width: 100%;
+  background:  url(../images/bg-pattern-circles.svg) no-repeat , $bg-Very-dark-gray-blue;
+  background-position: left -50% bottom 10%;
+  border-radius: 0 80px 0 80px;
+//   height: 400px;
+  @media  screen and (max-width:1100px) {
+    text-align: center;
+    background-position: left 50% bottom 10%;
+
+  }
+
+
+
+  .servive-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      max-width: 1100px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 8rem 0;
+      @media  screen and (max-width:1100px) {
+        grid-template-columns: 100%;
+        padding: 8rem 2rem;
+
+      }
+
+
+      .images {
+        position: relative;
+        
+          @media  screen and (max-width:1100px) {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform:  translate(-50%, -50%);
+          }
+
+          .phone-img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+              @media  screen and (max-width:1100px) {
+                position: static;
+                top: auto;
+                transform: none;
+                width: 30%;
+              }
+              @media  screen and (max-width:900px) {
+                width: 35%;
+              }
+              @media  screen and (max-width:800px) {
+                width: 40%;
+              }
+              @media  screen and (max-width:650px) {
+                width: 50%;
+              }
+              @media  screen and (max-width:500px) {
+                width: 70%;
+              }
+          }
+
+      }
+
+      .texte {
+          color: $White;
+
+          h4 {
+              font-size: 2.3rem;
+              margin-bottom: 2rem;
+              font-weight: 600;
+          }
+
+          p {
+              font-size: 1.1rem;
+              font-weight: 300;
+              line-height: 1.9rem;
+          }
+      }
+  }
+
+}
