@@ -1,11 +1,11 @@
 const navLinks = document.getElementById("navLinks");
 const btnOpen = document.getElementById("btn-open");
 const btnClose = document.getElementById("btn-close");
-const main = document.querySelector(".main");
+const header = document.querySelector(".header-text");
 
 btnOpen.addEventListener("click", toggleMenu);
 btnClose.addEventListener("click", toggleMenu);
-// main.addEventListener("click", closeMenu);
+header.addEventListener("click", closeMenu);
 
 function toggleMenu() {
   navLinks.classList.toggle("active");
@@ -14,10 +14,10 @@ function toggleMenu() {
   document.body.style.background = isOpen ? "rgba(0, 0, 0, 0.5)" : "transparent";
 }
 
-// function closeMenu() {
-//   if (navLinks.classList.contains("active")) {
-//     navLinks.classList.remove("active");
-//     document.body.style.overflow = "visible";
-//     document.body.style.background = "transparent";
-//   }
-// }
+function closeMenu() {
+  if (navLinks.classList.contains("active")) {
+    navLinks.classList.remove("active");
+    document.body.style.overflow = "visible";
+    document.body.style.background = "transparent";
+  }
+}
