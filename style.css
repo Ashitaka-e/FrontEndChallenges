@@ -42,6 +42,16 @@ body {
 	width: calc(100% - 6rem);
 }
 
+.projects-container .card-wrapper + .first {
+	order: 1;
+}
+.projects-container .card-wrapper + .second {
+	order: 2;
+}
+.projects-container .third {
+	order: 3;
+}
+
 .projects-container .card-wrapper {
 	background: rgb(255, 255, 255);
 	border-width: 1px;
@@ -53,6 +63,7 @@ body {
 	align-items: center;
 	overflow: hidden;
 	width: 100%;
+	order: 4; /* Ordonne tous les éléments restants après les trois premiers */
 }
 
 .projects-container .card-wrapper .image-wrapper {
