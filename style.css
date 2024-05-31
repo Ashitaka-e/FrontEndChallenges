@@ -97,6 +97,9 @@ body {
 .categorie-wrapper .categorie .tailwindcss {
 	color: #28b7ba;
 }
+.categorie-wrapper .categorie .api {
+	color: #0d243f;
+}
 
 .projects-container .card-wrapper {
 	margin: calc(0.625rem);
