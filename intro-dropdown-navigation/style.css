@@ -237,37 +237,36 @@ header nav .nav-links .btn-conexion {
 /* Additional Styles for Large Screens  HEADER & NAV */
 
 @media (min-width: 960px) {
-	/* header .navbar .nav-links {
-        width: 100%;
-        justify-content: space-between;
-    }
+	header .navbar .nav-links {
+		width: 100%;
+		justify-content: space-between;
+	}
 
-    header nav .nav-links .btn-conexion {
-        display: flex;
-    }
+	header nav .nav-links .btn-conexion {
+		display: flex;
+	}
 
-    header nav .nav-links {
-        display: flex;
-        height: auto;
-        position: relative;
-        right: 0 !important;
-    } */
-
-	/* header nav i {
+	header nav .nav-links {
+		display: flex;
+		height: auto;
+		position: relative;
+		right: 0 !important;
+	}
+	header nav i {
 		display: none;
-	} */
+	}
 
-	/* header nav ul i {
+	header nav ul i {
 		display: inline-block;
-	} */
+	}
 
-	/* header nav .nav-links ul {
+	header nav .nav-links ul {
 		padding: 0;
 	}
 
 	header nav .nav-links ul li {
 		display: inline-block;
-	} */
+	}
 
 	header nav .nav-links ul li ul {
 		padding: var(--space-xs);
